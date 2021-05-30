@@ -2,6 +2,7 @@ from tkinter import *
 from tkinter import filedialog as fd
 from tkinter.messagebox import showinfo
 import pygame
+import webbrowser
 import json
 #import function
 
@@ -68,8 +69,12 @@ def delete():
     # Stop Music if it's playing
     pygame.mixer.music.stop()
 
+GithubURL= 'https://github.com/pranay101/Media-Player-in-Python'
+def rate():
+    webbrowser.open(GithubURL)
 
-
+def help():
+    webbrowser.open("help.html")
     
 pygame.mixer.init()# initialise the pygame
 
@@ -125,10 +130,13 @@ menuBar.add_cascade(label="File", menu = filemenu)
 helpmenu = Menu(menuBar, tearoff=0)
 helpmenu.add_command(label="About Mediaplayer")
 helpmenu.add_separator()
-helpmenu.add_command(label="Rate us on Github")
+helpmenu.add_command(label="Rate us on Github",command=rate)
 helpmenu.add_separator()
-helpmenu.add_command(label="Help")
+helpmenu.add_command(label="Help", command=help)
 menuBar.add_cascade(label='Help', menu = helpmenu)
+
+
+credit = Label(window,text="Developed by Pranay Prajapati",bg="#1a1b1c", foreground='white').place(x=120,y=250)
 
 #calling main
 window.mainloop()
