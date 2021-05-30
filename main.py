@@ -136,7 +136,7 @@ helpmenu.add_command(label="Help", command=help)
 menuBar.add_cascade(label='Help', menu = helpmenu)
 
 
-credit = Label(window,text="Developed by Pranay Prajapati",bg="#1a1b1c", foreground='white').place(x=120,y=250)
+credit = Label(window,text="Developed by Pranay Prajapati & Sanchit Mahato",bg="#1a1b1c", foreground='white').place(x=70,y=250)
 
 #calling main
 window.mainloop()
