@@ -67,8 +67,7 @@ def delete():
     playlist.delete(ANCHOR)
     # Stop Music if it's playing
     pygame.mixer.music.stop()
-    playlist.delete(ACTIVE)
-    pass
+
 
 
     
@@ -80,9 +79,6 @@ master_frame.pack(pady=20)
 
 playlist = Listbox(master=master_frame, bg="#1a1b1c", fg="white", width=60, selectbackground="#d6d6d6", selectforeground="black")
 playlist.grid(row=0, column=0)
-
-name="prana prajapat"
-playlist.insert(END,name)
 
 
 # Define Player Control Button Images
