@@ -4,7 +4,7 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-Currentyl developing a music player in python that can be customize to a whole new level
+Currently developing a music player in python that can be customize to a whole new level
 
 
 ## Features
@@ -25,7 +25,7 @@ Currentyl developing a music player in python that can be customize to a whole n
 - ###  clone the Repository
     
      ```sh
-     git clone https://github.com/pranay101/Media-Player-in-Python.git
+    git clone https://github.com/pranay101/Media-Player-in-Python.git
     ```
      ```sh
     cd python
